@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>鬼魅电影</title>
+  <link rel="shortcut icon" href="/images/0.jpg">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/stylesheets/css.css">
+
+  <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/javascripts/myjs.js"></script>
+  <script src="https://cdn.bootcss.com/masonry/4.1.1/masonry.pkgd.min.js"></script>
+
+</head>
+<body>
+  <% include head%>
+  <div class="container">
+    <h1><strong>后台资源</strong></h1>
+    <form class="form-horizontal" action="/" method="post">
+      <div class="form-group">
+        <label for="inputTitle" class="col-sm-2 control-label">电影名字</label>
+        <div class="col-sm-10">
+          <input type="text" name="title" class="form-control" id="inputTitle" placeholder="The movie name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputDirector" class="col-sm-2 control-label">电影导演</label>
+        <div class="col-sm-10">
+          <input type="text" name="director" class="form-control" id="inputDirector" placeholder="The film director ">
+        </div>
+      </div><div class="form-group">
+        <label for="inputCountry" class="col-sm-2 control-label">国家</label>
+        <div class="col-sm-10">
+          <input type="text" name="country" class="form-control" id="inputCountry" placeholder="Countries">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputLanguage" class="col-sm-2 control-label">语种</label>
+        <div class="col-sm-10">
+          <input type="text" name="language" class="form-control" id="inputLangage" placeholder="Languages">
+        </div>
+      </div><div class="form-group">
+        <label for="inputPoster" class="col-sm-2 control-label">海报地址</label>
+        <div class="col-sm-10">
+          <input type="text" name="poster" class="form-control" id="inputPoster" placeholder="Posters address">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputSources" class="col-sm-2 control-label">片源地址</label>
+        <div class="col-sm-10">
+          <input type="text" name="sources" class="form-control" id="inputSources" placeholder="Sources address ">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputDate" class="col-sm-2 control-label">上映年代</label>
+        <div class="col-sm-10">
+          <input type="date" name="date" class="form-control" id="inputDate" placeholder="The release of s" >
+        </div>
+      </div>
+      <div class="form-group form-group-lg">
+        <label class="col-sm-2 control-label" for="textIntroduction">电影简介</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="textIntroduction" name="introd" rows="4" cols="80" placeholder="The movie introduction"></textarea>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary">录入（Entry）</button>
+    </div>
+  </form>
+</body>
+</html>
